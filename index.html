@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>mapcn.jsx — Beautiful maps, made simple.</title>
+    <meta name="title" content="mapcn.jsx — Beautiful maps, made simple." />
+    <meta name="description" content="Beautifully designed, open-source map components for React Vite. The .jsx version of mapcn by Belmehnouf Ahmed." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/Untitled-Master/mapcn.jsx" />
+    <meta property="og:title" content="mapcn.jsx — Beautiful maps, made simple." />
+    <meta property="og:description" content="React Vite version of the beautifully designed map components. Zero config. One command setup." />
+    <meta property="og:image" content="/banner.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="mapcn.jsx — Beautiful maps, made simple." />
+    <meta property="twitter:description" content="React Vite version of the beautifully designed map components. Zero config. One command setup." />
+
+    <!-- Theme Script: Prevents white flash by applying dark mode before the app renders -->
+    <script>
+      try {
+        const isDark = localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && true);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (_) {}
+    </script>
+
+    <style>
+      /* Optional: Set a background color for the body immediately to match the dark theme */
+      .dark body {
+        background-color: #030712; /* Matches Tailwind's slate-950 or gray-950 */
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

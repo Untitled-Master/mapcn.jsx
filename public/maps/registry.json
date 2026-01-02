@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "mapcnjsx",
+  "homepage": "https://github.com/Untitled-Master/mapcn",
+  "items": [
+    {
+      "name": "map",
+      "type": "registry:ui",
+      "title": "Map",
+      "description": "A MapLibre-powered map component with markers, popups, tooltips, routes, and controls.",
+      "dependencies": ["maplibre-gl", "lucide-react"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/registry/map.jsx",
+          "type": "registry:ui",
+          "target": "components/ui/map.jsx"
+        }
+      ],
+      "css": {
+        "@layer base": {
+          ".maplibregl-popup-content": {
+             "@apply bg-transparent! shadow-none! p-0! rounded-none!": {}
+          },
+          ".maplibregl-popup-tip": {
+            "@apply hidden!": {}
+          }
+        }
+      }
+    }
+  ]
+}
